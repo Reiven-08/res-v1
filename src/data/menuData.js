@@ -1,4 +1,4 @@
-const contactSheet = '/images/menu-dishes.png'
+const contactSheet = '/images/menu-dishes.webp'
 
 export const menuItems = [
   {

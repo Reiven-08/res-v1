@@ -20,8 +20,8 @@ export default function Hero({ onViewMenu, onViewDrinks }) {
 
       <div className="hero__visual">
         <picture>
-          <source media="(max-width: 699px)" srcSet="/images/hero-mobile.png" />
-          <img src="/images/hero-desktop.png" srcSet="/images/hero-desktop.png 700w, /images/hero-desktop-enhanced.png 1677w" sizes="100vw" alt="Warmly lit food prepared for a gathering" width="700" height="392" fetchPriority="high" />
+          <source media="(max-width: 699px)" srcSet="/images/hero-mobile-576.webp 576w, /images/hero-mobile.webp 1152w" sizes="100vw" />
+          <img src="/images/hero-desktop.webp" srcSet="/images/hero-desktop.webp 700w, /images/hero-desktop-enhanced.webp 1677w" sizes="100vw" alt="Warmly lit food prepared for a gathering" width="700" height="392" loading="eager" fetchPriority="high" />
         </picture>
       </div>
 

@@ -19,7 +19,7 @@ export default function FoodCard({ item, active, flipped, quantity, onFlip, onAd
         <div className="food-card__face food-card__front" aria-hidden={flipped}>
           <button className="food-card__body" type="button" onClick={handleCardClick} tabIndex={active ? 0 : -1} aria-label={active ? `Flip ${item.name} to see details` : `Show ${item.name}`}>
             <span className="food-card__image-frame">
-              <img className={`food-card__image food-card__image--${item.imagePosition}`} src={item.image} alt={item.name} width="1024" height="1024" draggable="false" />
+              <img className={`food-card__image food-card__image--${item.imagePosition}`} src={item.image} alt={item.name} width="1024" height="1024" loading="lazy" decoding="async" draggable="false" />
             </span>
             <span className="food-card__details">
               <span className="food-card__name">{item.name}</span>

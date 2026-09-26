@@ -19,7 +19,7 @@ export default function DrinkCard({ item, active, flipped, quantity, onFlip, onA
         <div className="drink-card__face drink-card__front" aria-hidden={flipped}>
           <button className="drink-card__body" type="button" onClick={handleCardClick} tabIndex={active ? 0 : -1} aria-label={active ? `Flip ${item.name} to see details` : `Show ${item.name}`}>
             <span className="drink-card__visual">
-              <img src={item.image} alt={`${item.name} cocktail`} width="1200" height="1000" draggable="false" />
+              <img src={item.image} alt={`${item.name} cocktail`} width="1200" height="1000" loading="lazy" decoding="async" draggable="false" />
             </span>
             <span className="drink-card__details">
               <span className="drink-card__title-row"><span className="drink-card__name">{item.name}</span><span className="drink-card__price">${item.price}</span></span>
